@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Management</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .new-course-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .new-course-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Table Styles */
+        .courses-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .courses-table thead {
+            background-color: #0e0752;
+            color: white;
+        }
+
+        .courses-table th, .courses-table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .courses-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/home/index.html" class="_blank" >
+            <button>Go Back</button>
+        </a>
+        
+        <header>
+            <h1>Events List</h1>
+            <button class="new-course-btn" onclick="openCourseForm()">+ Event List</button>
+        </header>
+
+        
+        <table class="courses-table" id="coursesTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Event Name</th>
+                    <th>URL</th>
+                    <th>File</th>
+                    <th>Details</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Course rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Course Form Modal -->
+    <div class="modal" id="courseFormModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCourseForm()">&times;</span>
+            <h2>Add New </h2>
+            <form id="courseForm">
+                <label for="courseName">Workshop Name:</label><br>
+                <input type="text" id="courseName" required><br><br>
+
+                <label for="courseUrl">Course URL:</label><br>
+                <input type="url" id="courseUrl" required><br><br>
+                 
+                <label for="file">File:</label><br>
+                <input type="file" id="file" required><br><br>
+
+                <label for="courseDetails">Details:</label><br>
+                <textarea id="courseDetails" rows="4" required></textarea><br><br>
+
+                <button type="button" onclick="addCourse()">Add Event</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let courseCount = 0;
+
+        function openCourseForm() {
+            document.getElementById("courseFormModal").style.display = "block";
+        }
+
+        function closeCourseForm() {
+            document.getElementById("courseFormModal").style.display = "none";
+        }
+
+        function addCourse() {
+            // Get form values
+            const courseName = document.getElementById("courseName").value;
+            const courseUrl = document.getElementById("courseUrl").value;
+            const courseDetails = document.getElementById("courseDetails").value;
+
+            // Ensure all fields are filled
+            if (!courseName || !courseUrl || !courseDetails) {
+                alert("Please fill all fields.");
+                return;
+            }
+
+            // Increment the course count
+            courseCount++;
+
+            // Create new table row
+            const table = document.getElementById("coursesTable").getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            // Insert cells and content
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+            const cell5 = newRow.insertCell(4);
+
+            cell1.innerHTML = courseCount;
+            cell2.innerHTML = courseName;
+            cell3.innerHTML = `<a href="${courseUrl}" target="_blank">${courseUrl}</a>`;
+            cell4.innerHTML = courseDetails;
+            cell5.innerHTML = `<button onclick="deleteCourse(this)">Delete</button>`;
+
+            // Clear form and close modal
+            document.getElementById("courseForm").reset();
+            closeCourseForm();
+        }
+
+        function deleteCourse(button) {
+            const row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+</html>

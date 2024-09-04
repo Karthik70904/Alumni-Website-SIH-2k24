@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+header {
+    text-align: center;
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.donation-option {
+    background-color: #ffffff;
+    border: 2px solid #6200ea;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.donation-option:hover {
+    transform: scale(1.05);
+}
+
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+.upi-input, .bank-select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6200ea;
+    border-radius: 5px;
+}
+
+.donate-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #3700b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}

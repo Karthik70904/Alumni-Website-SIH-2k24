@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Jobs Page</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+<body>
+
+    <a href="/home/index.html" class="_blank" >
+        <button>Go Back</button>
+    </a>
+    <div class="container">
+        <h1>Post a Job</h1>
+        <form id="jobForm">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" required>
+
+            <label for="jobDescription">Job Description:</label>
+            <textarea id="jobDescription" required></textarea>
+
+            <label for="applicationUrl">Application URL:</label>
+            <input type="url" id="applicationUrl" required>
+
+            <label for="jobImage">Upload Job Image (URL):</label>
+            <input type="url" id="jobImage">
+
+            <button type="submit">Submit Job</button>
+        </form>
+
+        <div id="jobsDisplay" class="jobs-display"></div>
+    </div>
+
+    <script src="job.js"></script>
+</body>
+</html>

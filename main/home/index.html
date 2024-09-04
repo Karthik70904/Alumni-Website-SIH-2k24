@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel=" stylesheet" href="css/slick.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="main-overlay"></div>
+        <header class="header-default">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-xl">
+                    <!-- logo  -->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown active">
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link">Mentorship</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="./mentor/mentor.html" class="dropdown-item">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="./workshops/course.html" class="dropdown-item">Conduct Workshops</a>
+                                    </li>
+                                    <li>
+                                        <a href="./workshops/events.html" class="dropdown-item">Conduct Events</a>
+                                    </li>
+                                    
+                                    
+                               </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./donations/do.html" class="nav-link dropdown-item">Donations</a>
+                                <ul class="dropdown-menu">
+                                    
+                                    
+                               </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Updates</a>
+                                <ul class="dropdown-menu">
+                                    
+                                    <li>
+                                        <a href="./job/job.html" class="dropdown-item">Job Posts</a>
+                                    </li>
+                                    
+                               </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="index.html" class="nav-link dropdown-item"> Contact</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item"></a>
+                                    </li>
+                                    
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- right side of header  -->
+                    <div class="header-right">
+                        <ul class="social-icons list-unstyled list-inline mb-0">
+                        
+                        </ul>
+
+                        <!-- buttons  -->
+                        <div class="header-buttons">
+                            <button class="search icon-button">
+                                <i class="icon-magnifier"></i>
+                            </button>
+                            <button class="burger-menu icon-button">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+        </header>
+
+
+
+        <!-- section starts  -->
+        <section id="hero">
+            <div class="container-xl">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+
+                        <div class="post featured-post-lg">
+                            <div class="details clearfix">
+                                <h2 class="post-title">
+                                    <a href="#">ALUMNI </a>
+                                </h2>
+                                <ul class="meta list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">Alumni Association</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#">
+                                <div class="thumb rounded">
+                                    <div class="inner data-bg-image" data-bg-image="images/meet.jpeg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="post-tabs rounded bordered">
+                            <ul class="nav nav-tabs nav-pills nav-fill" id="postTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button aria-controls="popular" aria-selected="true" class="nav-link active"
+                                        data-bs-target="#popular" data-bs-toggle="tab" id="popular-tab" role="tab"
+                                        type="button">
+                                        <-
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button aria-controls="recent" aria-selected="false" class="nav-link"
+                                        data-bs-target="#recent" data-bs-toggle="tab" id="recent-tab" role="tab"
+                                        type="button">
+                                        ->
+                                    </button>
+                                </li>
+
+                            </ul>
+
+                            <!-- content  -->
+                            <div class="tab-content" id="postsTabContent">
+                                <!-- loader -->
+                                <div class="lds-dual-ring"></div>
+                                <!-- pop post  -->
+
+                                <div class="tab-pane fade show active" id="popular" aria-labelledby="popular-tab"
+                                    role="tabpanel">
+                                    <!-- post  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/windows.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="/donations/do.html">Donations </a>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <!-- post2  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/chromebook.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="">.</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post3  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/andr.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#"></a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">13 Dec 2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post4  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/ubu.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#"></a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">01 Jun 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- recent  -->
+                                <div class="tab-pane fade" id="recent" aria-labelledby="recent-tab" role="tabpanel">
+                                    <!-- post  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/ubu.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#"></a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">19 Dec 2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post2  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/windows.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#"></a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">23 May 2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post3  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/chromebook.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">updates</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">14 Sep 2023</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post4  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/posts/andr.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">A New Approach to Real-Money Games on Google Play</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">11 Jan 2024</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- main content  -->
+
+        <section class="main-content">
+            <div class="container-xl">
+                <div class="row gy-4">
+
+                    <!-- left part 1st section  -->
+                    <div class="col-lg-8">
+                        
+
+                        <div class="padding-30 rounded bordered">
+                            <div class="row gy-5">
+                                <div class="col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post">
+                                        
+                                        <ul class="meta list-inline mt-4 mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <img class="author" src="images/1.PNG" alt="">
+                                                    ALUMNI ASSOCIATION
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    
+                                            </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="spacer" data-height="50"></div>
+
+                        
+
+                        <div class="spacer" data-height="50"></div>
+
+                        
+
+                        
+                                
+                            </div>
+                        </div>
+                        <!-- left part over here  -->
+
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="widget rounded">
+                                <div class="widget-about text-center">
+                                    <img src="images/logo.svg" alt="" class="logo">
+                                    <p class="mb-4" style="text-align: justify;">Alumni giving plays a crucial role in <b>supporting educational institutions by providing funds that enhance academic programs, scholarships, and facilities.</b> 
+                                        </p>
+                                    <p class="mb-2" style="text-align: left;">
+                                        Additionally, it <b> fosters a sense of community and pride among former students, encouraging them to invest in the future success of their alma mater.</p>
+                                </div>
+                            </div>
+
+                            
+                </div>
+            </div>
+        </section>
+
+
+        <div class="instagram">
+            <div class="container-xl">
+                <a href="#" class="btn btn-default btn-instagram">@Alumni Association</a>
+                <div class="instagram-feed d-flex flex-wrap">
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="insta-item col-sm-2 col-6 col-md-2">
+                        <a href="#">
+                            <img src="images/insta/insta-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-xl">
+                <div class="footer-inner">
+                    <div class="row d-flex align-items-center gy-4">
+                        <div class="col-md-4">
+                            <span class="copyright">&copy; 2024 Alumni Association</span>
+                            <p>Alumni Association</p>
+                            <P></P>
+                        </div>
+                         
+                        <div class="col-md-4">
+                            <a href="#" id="return-to-top" class="float-md-end">
+                                <i class="icon-arrow-up"></i>
+                                Back to Top
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+
+    <!-- canvas menu  -->
+    <div class="canvas-menu d-flex align-items-end flex-column">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+        <nav>
+            <ul class="vertical-menu">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                    <ul class="submenu">
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Donations</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">About Me</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        
+    </div>
+
+
+    <!-- search pop up  -->
+    <div class="search-popup">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+
+        <div class="search-content">
+            <div class="text-center">
+                <h3 class="mb-4 mt-0">Press ESC to close</h3>
+            </div>
+
+            <form action="" class="d-flex search-form">
+                <input type="search" placeholder="Search and press enter ..." aria-label="Search"
+                    class="form-control me-2">
+                <button class="btn btn-default btn-lg" type="submit">
+                    <i class="icon-magnifier"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- javascripts  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
