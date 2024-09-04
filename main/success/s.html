@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <title>Alumni Success Stories</title>
+</head>
+<body>
+    <header>
+        <h1>Alumni Success Stories</h1>
+    </header>
+
+    <a href="/landing.html" class="_blank" >
+        <button>Go Back</button>
+    </a>
+
+    <main>
+        <section class="form-section">
+            <h2>Share Your Success Story</h2>
+            <form id="success-story-form">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="text" id="story" placeholder="Your Story" required />
+                <input type="file" id="image" accept="image/*" required />
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="stories-section" id="stories-section">
+            <h2>Success Stories</h2>
+            <!-- Stories will be dynamically injected here -->
+        </section>
+    </main>
+
+    <script src="s.js"></script>
+</body>
+</html>

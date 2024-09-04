@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+<div class=".container con2  ">
+  <div class="row">
+ 
+  <form name="StudenRegistrationForm2" class="right2 tab col-8" >
+  
+    <div class="form">
+     
+<div class="row p-5 ">
+    <h1 class=""> Enter Student Details!</h1>
+<div class="col-6 mt-3 ">
+<h6>Academic Background</h>
+  <p class="mt-3 text-decoration-underline">Intermediate:</p>
+<div class="mb-3">
+  <label for="collegeName" class="form-label"><i class="bi bi-buildings"></i>College Name:</label>
+  <input type="text" class="form-control" name="collegeName" id="collegeName" placeholder="College Name" >
+  <span style="display: block;color: #F2C010" id="error20"></span>
+    </div>
+<label for="inter" class="form-label"><i class="bi bi-book"></i>Course:</label>
+<select class="form-select " aria-label="Default select example" name="inter" id="inter">
+  <option value="-1" >select..</option>
+  <option value="F.sc(medical)">F.sc(medical)</option>
+  <option value="F.sc(non-medical)">F.sc(non-medical)</option>
+  <option value="I.C.S">I.C.S</option>
+  <option value="F.A">F.A</option>
+  <option value="F.A(I.T)">F.A(I.T)</option>
+</select>
+  <span style="display: block;color: #F2C010" id="error21"></span>
+<div class="mb-3">
+  <label for="interMarks" class="form-label"><i class="bi bi-check-circle-fill"></i>Total Marks:</label>
+  <input type="number" class="form-control" name="interMarks" id="interMarks" placeholder="/1100">
+  <span style="display: block;color: #F2C010" id="error22"></span>
+    </div>
+    <div class="mb-3">
+  <label for="passInter" class="form-label"><i class="bi bi-calendar-event"></i>Passing Year</label>
+  <input type="date" class="form-control" name="passInter" id="passInter" >
+  <span style="display: block;color: #F2C010;" id="error23"></span>
+    </div>
+
+
+  
+
+
+    
+     
+
+</div>
+
+<!-- second -->
+<div class="col-6 mt-5 ">
+  <p class=" text-decoration-underline">Matric:</p>
+ <div class="mb-3">
+  <label for="schoolName" class="form-label"><i class="bi bi-building"></i>School Name:</label>
+  <input type="text" class="form-control" name="schoolName" id="schoolName" placeholder="School Name">
+  <span style="display: block;color: #F2C010" id="error24"></span>
+    </div>
+<label for="matric" class="form-label"><i class="bi bi-book"></i>Course</label>
+<select class="form-select " aria-label="Default select example" name="matric" id="matric">
+  <option value="-1" >select..</option>
+   <option value=" Computer Science"> Computer Science</option>
+  <option value="Bioogy">Bioogy</option>
+ 
+  <option value="Arts">Arts</option>
+ 
+</select>
+  <span style="display: block;color: #F2C010" id="error25"></span>
+
+<div class="mb-3">
+  <label for="matricMarks" class="form-label"><i class="bi bi-check-circle-fill"></i>Total Marks:</label>
+  <input type="number" class="form-control" name="matricMarks" id="matricMarks" placeholder="/1100" >
+  <span style="display: block;color: #F2C010" id="error26"></span>
+    </div>
+    <div class="mb-3">
+  <label for="passMatric" class="form-label"><i class="bi bi-calendar-event"></i>Passing Year</label>
+  <input type="date" class="form-control" name="passMatric" id="passMatric" >
+  <span style="display: block;color: #F2C010;" id="error27"></span>
+    </div>
+</div>
+ <div class="mb-3">
+  <label for="" class="form-label"><i class="bi bi-file-earmark-person"></i>Other Extra Curricular Activities</label>
+  <input type="text" class="form-control" name="Curricula" id="Curricula" placeholder="Extra Curricular">
+  <span style="display: block;color: #F2C010;" id="error27"></span>
+    </div>
+<h1 class="mt-4">Other Details</h1>
+<div class="col-6">
+  <div class="row mb-4 ">   
+  
+  <div class="row ">
+ <label for="Scholarship" class="form-label row text-center col-12 align-content-center  mx-2 ">Do You Have Any Scholarship?:</label>
+  </div>
+ 
+    <div class="form-check col-5 mx-3 ">
+  <input class="form-check-input" type="checkbox" value="Yes" id="Scholarship" name="Scholarship">
+  <label class="form-check-label" for="flexCheckDefault">
+   Yes
+  </label>
+  <span style="display: block;color: #F2C010; " id="error28"></span>
+</div>
+<div class="form-check col-5">
+  <input class="form-check-input" type="checkbox" value="No" id="Scholarship"  name="Scholarship">
+  <label class="form-check-label" for="flexCheckChecked">
+   No
+  </label>
+
+  
+</div>
+</div>
+ <div class="mb-3">
+  <label for="birth" class="form-label"><i class="bi bi-calendar"></i>Date of Birth</label>
+  <input type="date" class="form-control" name="birth" id="birth" >
+  <span style="display: block;color: #F2C010;" id="error3"></span>
+    </div>
+</div>
+<div class="col-6">
+<div class="mb-3">
+  <label for="Income" class="form-label"><i class="bi bi-currency-dollar"></i>Estimate Your Family Monthly Income:</label>
+  <input type="number" class="form-control" name="Income" id="Income" placeholder="Monthly Income" >
+  <span style="display: block;color: #F2C010" id="error9"></span>
+    </div>
+     <div class="mb-3">
+  <label for="interests" class="form-label"><i class="bi bi-file-medical-fill"></i>Interests</label>
+  <input type="text" class="form-control" name="interests" id="interests" placeholder="Area of Interests" >
+  <span style="display: block;color: #F2C010;" id="error3"></span>
+    </div>
+</div>
+   
+  
+  <div >
+ <label for="Skills" class="form-label row text-center col-12 align-content-center  mx-2 ">Skills/Talents</label>
+  </div>
+ 
+    <div class="form-check  col-3 mx-3 ">
+  <input class="form-check-input" type="checkbox" value="Programming" id="skillsProgramming" name="Skills">
+  <label class="form-check-label" for="flexCheckDefault">
+   Programming
+  </label>
+  <span style="display: block;color: #F2C010; " id="error5"></span>
+</div>
+<div class="form-check col-3">
+  <input class="form-check-input" type="checkbox" value="Writing" id="skillsWriting"  name="Skills">
+  <label class="form-check-label" for="flexCheckChecked">
+   Writing
+  </label>
+
+  
+</div>
+<div class="form-check col-3 ">
+  <input class="form-check-input" type="checkbox" value="Drawing" id="skillsDrawing" name="Skills">
+  <label class="form-check-label" for="flexCheckDefault">
+   Drawing
+  </label>
+  <span style="display: block;color: #F2C010; " id="error5"></span>
+</div>
+<div class="form-check col-2">
+  <input class="form-check-input" type="checkbox" value="Crafts" id="skillsCrafts"  name="Skills">
+  <label class="form-check-label" for="flexCheckChecked">
+   Crafts
+  </label>
+
+  
+</div>
+<div class="col-6"></div>
+</div>
+  
+
+      
+  
+ 
+ 
+      
+ 
+
+
+    </div>
+    <div class="row btn21  py-4 px-4 rounded">
+      <div class="col-6">
+<button type="reset"  class="btn " onclick="resetForm1()">Reset</button></div>
+      <div class="col-6"><button type="button" id="submitBtn2"  class="btn float-end" data-toggle="modal" onclick="return validate1();" >
+  Submit
+</button></div>
+    </div>
+     
+
+
+  </form>
+   <div class="left2 col-4">
+   <div class="row">
+    <div class="col-12"></div>
+   </div>
+    
+   <img class="img" src="Captureioipio-removebg-preview.png" alt="">
+    <h1 class="flex-wrap  px-4">
+      <!-- <i class="fas fa-paw"></i> -->
+      
+Student Registration Form
+    </h1>
+    
+     <div class="stdImg ">
+      <img src="2121601-removebg-preview.png" class="img-fluid w-75" />
+    </div>
+  </div>
+ 
+ </div>
+ </div>
+<div class="container-fluid ">
+<div class="row">
+  <div class="col-12">
+<div class=" table-responsive rounded ">
+  <table class="table  table-hover  " >
+    <thead>
+      <tr>
+        <th scope="col" >#</th>
+        <th scope="col">College Name</th>
+        <th scope="col">Inter SUbject</th>
+        <th scope="col">Inter Marks</th>
+        <th scope="col">Inter Pass Year</th>
+         
+        <th scope="col">School Name</th>
+        <th scope="col">Matric Subject</th>
+        <th scope="col">Matric Marks</th>
+        <th scope="col">Matric Pass Year</th>
+        <th scope="col">Extra Curricula</th>
+        <th scope="col">Scholarship</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Total Income</th>
+        <th scope="col">Interests</th>
+        <th scope="col">skills</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="table2">
+
+    </tbody>
+  </table>
+
+ 
+ 
+</div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+ 
+</div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="main2.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

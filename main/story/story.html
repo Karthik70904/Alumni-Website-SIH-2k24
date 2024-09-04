@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="story.css">
+    <title>Alumni Success Stories</title>
+</head>
+<body>
+    <header>
+        <h1>Alumni Success Stories</h1>
+        <p>Share your journey and inspire others!</p>
+    </header>
+
+    <section id="story-form">
+        <h2>Submit Your Story</h2>
+        <form id="success-story-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="profession" placeholder="Your Profession" required>
+            <textarea id="story" rows="5" placeholder="Your Success Story" required></textarea>
+            <a>Upload Profile Picture</a>
+            <input type="file" id="image" accept="image/*">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="stories">
+        <h2>Our Alumni Success Stories</h2>
+        <div id="story-container"></div>
+    </section>
+
+    <script src="story.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Project Submission</title>
+    <link rel="stylesheet" href="inno.css">
+</head>
+<body>
+    
+    <a href="/landing.html" class="_blank" >
+        <button>Go Back</button>
+    </a>
+  
+
+    <div class="container">
+        <h1>Submit Your Innovation</h1>
+        <form id="submissionForm">
+            <label for="innovationName">Innovation Name:</label>
+            <input type="text" id="innovationName" required>
+            
+            <label for="theme">Theme:</label>
+            <input type="text" id="theme" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+            
+            <label for="postedBy">Posted By:</label>
+            <input type="text" id="postedBy" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Submitted Innovations</h2>
+        <table id="innovationsTable">
+            <tr>
+                <th>Innovation Name</th>
+                <th>Theme</th>
+                <th>Description</th>
+                <th>Posted By</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="inno.js"></script>
+</body>
+</html>

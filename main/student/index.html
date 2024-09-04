@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form with Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+  <a href="/landing.html" class="_blank" >
+    <button>Go Back</button>
+</a>
+<div class=".container con  ">
+  <div class="row">
+  <div class="left col-4">
+   <div class="row">
+    <div class="col-12"></div>
+   </div>
+    
+   <img class="img" src="Captureioipio-removebg-preview.png" alt="">
+    <h1 class="flex-wrap  px-4">
+      <!-- <i class="fas fa-paw"></i> -->
+      
+Student Registration Form
+    </h1>
+    
+     <div class="stdImg ">
+      <img src="register.png" class="img-fluid w-75" />
+    </div>
+  </div>
+  <form name="StudenRegistrationForm" class="right tab col-8" >
+  
+    <div class="form">
+     
+<div class="row p-5 ">
+    <h1>Enter Here your Basic Details!</h1>
+<div class="col-6 ">
+
+ <div class="mb-3">
+  <label for="name" class="form-label"><i class="bi bi-person-check-fill"></i>Full Name: </label>
+  <input type="text" class="form-control" name="name" id="name" >
+  <span style="display: block;color: #F2C010; " id="error1"></span>
+    </div>
+    <div class="mb-3">
+  <label for="PostAdress" class="form-label"><i class="bi bi-postage"></i>Doubt On</label>
+  <input type="text" class="form-control" name="PostAdress" id="PostAdress" >
+  <span style="display: block;color: #F2C010;" id="error3"></span>
+    </div>
+
+<div class="row mb-4 ">   
+  
+  <div class="row ">
+ <label for="Gender" class="form-label row text-center col-12 align-content-center  mx-2 ">Gender:</label>
+  </div>
+ 
+    <div class="form-check col-5 mx-3 ">
+  <input class="form-check-input" type="checkbox" value="male" id="Gender" name="Gender">
+  <label class="form-check-label" for="flexCheckDefault">
+   Male
+  </label>
+  <span style="display: block;color: #F2C010; " id="error5"></span>
+</div>
+<div class="form-check col-5">
+  <input class="form-check-input" type="checkbox" value="female" id="Gender"  name="Gender">
+  <label class="form-check-label" for="flexCheckChecked">
+    Female
+  </label>
+
+  
+</div>
+</div>
+<label for="" class="form-label"><i class="bi bi-building"></i>City:</label>
+<select class="form-select " aria-label="Default select example" name="City" id="City">
+  <option value="-1" >select..</option>
+  <option value="Madanapalle">Madanapalle</option>
+  <option value="Chittoor">Chittoor</option>
+  <option value="kadapa">Kadapa</option>
+  <option value="Ananthapur">Ananthapur</option>
+  <option value="Other">Other</option> 
+</select>
+<span style="display: block;color: #F2C010" class="mb-3" id="error7"></span>
+   <div class="mb-3">
+  <label for="pincode" class="form-label"><i class="bi bi-pen"></i>Pin Code:</label>
+  <input type="number" class="form-control" name="pincode" id="pincode" >
+  <span style="display: block;color: #F2C010" id="error9"></span>
+    </div>
+    
+       <div class="mb-3">
+  <label for="phoneNumber" class="form-label"><i class="bi bi-phone"></i>Phone Number:</label>
+  <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" >
+  <span style="display: block;color: #F2C010" id="error11"></span>
+    </div>
+
+</div>
+
+<!-- second -->
+<div class="col-6  lefOfLeft">
+   <div class="mb-3">
+  <label for="fatherName" class="form-label"><i class="bi bi-person-fill"></i>College ID No:</label>
+  <input type="text" class="form-control" name="fatherName" id="fatherName" >
+  <span style="display: block;color: #F2C010" id="error2"></span>
+    </div>
+       <div class="mb-3">
+  <label for="perAddress" class="form-label"><i class="bi bi-geo-alt"></i>college Name:</label>
+  <input type="text" class="form-control" name="perAddress" id="perAddress" >
+  <span style="display: block;color: #F2C010" id="error4"></span>
+    </div>
+    <label for="" class=" mb-2"><i class="bi bi-journal-bookmark"></i>Course:</label>
+<select class="form-select  " aria-label="Default select example" name="Course" id="Course">
+  <option value="-1" >select..</option>
+  <option  value="CSE">CSE</option>
+  <option value="CST">CST</option>
+  <option value="CSE(AI)">CSE(AI)</option>
+  <option value="CSE(DS)">CSE(DS)</option>
+  <option value="CSE(AI/ML)">CSE(AI/ML)</option>
+  <option value="CSE(CS)">CSE(CS)</option>
+  <option value="CSE(CN)">CSE(CN)</option>
+  <option value="CSE(IT)">CSE(IT)</option>
+  <option value="CSE(IOT)">CSE(IOT)</option>
+  <option value="ECE">ECE</option>
+  <option value="EEE">EEE</option>
+  <option value="MCA">MCA</option>
+  <option value="MBA">MBA</option>
+</select>
+<span style="display: block;color: #F2C010" class="mb-3" id="error6"></span>
+
+<label for="" class="form-label "><i class="bi bi-buildings"></i>Province:</label>
+<select class="form-select " aria-label="Default select example" name="Province" id="Province">
+  <option value="-1" >select..</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Tamilnadu">Tamilnadu</option>
+  <option value="Talangana">Talangana</option>
+  <option value="Other">Other</option>
+</select>
+<span style="display: block;color: #F2C010" class="mb-3" id="error8"></span>
+  <div class="mb-3">
+  <label for="emailId" class="form-label"><i class="bi bi-envelope-arrow-up"></i>College Email Id:</label>
+  <input type="email" class="form-control" name="emailId" id="emailId" >
+  <span style="display: block;color: #F2C010" id="error10"></span>
+    </div>
+
+</div>
+
+
+
+   </div>
+
+      
+  
+ 
+ 
+      
+ 
+
+
+    </div>
+    <div class="row btn12  py-4 px-4 rounded">
+      <div class="col-6">
+<button type="reset"  class="btn " onclick="resetForm()">Reset</button></div>
+      <div class="col-6"><button type="button"id="submitBtn"  class="btn float-end" data-toggle="modal" onclick="return validate();" >
+  Submit
+</button></div>
+    </div>
+     
+
+
+  </form>
+  
+ 
+ </div>
+ </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"   role="document">
+    <div class="modal-content" style="background-color: #192a56">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="color: #ffff; font-weight: bold;"></h5>
+        
+        <button type="button" onclick="modalClose()"class="btn-close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modal-body" style="color: #ffff ;">
+        
+      </div>
+      <div class="modal-footer ">
+        
+        <button  id="delbtn" type="button"  style="display: none;" class="btn btn-primary">Yes</button>  <button  id="updatebtn" type="button"  style="display: none;" class="btn btn-primary">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnDelete" onclick="modalClose()"></button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid ">
+<div class="row">
+  <div class="col-12">
+<div class=" table-responsive rounded ">
+  <table class="table  table-hover  " id="tabel1">
+    <thead class="tabelHeader">
+      <tr>
+        <th scope="col" >#</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">College ID NO</th>
+        <th scope="col">Doubt On</th>
+        <th scope="col">College Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Course</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Pin Code</th>
+        <th scope="col">College Email Id</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tabel" >
+     
+    </tbody>
+   
+  </table>
+
+   <button type="button" class="btn btn-primary float-end" onclick="printTable()">Print Table</button>
+ 
+</div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="main2.js"></script>
+
+<!-- Then include the script where you are using data2 -->
+<script src="main.js"></script>
+</body>
+</html>
+
+

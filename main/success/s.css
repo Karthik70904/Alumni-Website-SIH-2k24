@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #02503d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+.form-section, .stories-section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="file"],
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #0a53a1;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #037330;
+}
+
+.story {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.story img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.story p {
+    margin: 0;
+}
